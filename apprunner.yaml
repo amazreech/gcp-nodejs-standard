@@ -3,7 +3,6 @@ runtime: nodejs12
 build:
   commands:
     build:
-      - echo "in build"
       - npm install
 run:
   command: node index.js
