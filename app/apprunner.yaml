@@ -2,6 +2,10 @@ version: 1.0
 runtime: nodejs12
 build:
   commands:
+    pre-build:
+      - free -m
+      - ps aux | head -1; ps aux | sort -rnk 4 | head -5
+      - echo "pre-build"
     build:
       - echo "in build"
       - npm install
