@@ -5,5 +5,7 @@ build:
     build:
       - echo "in build"
       - npm install
+    post-build:
+      - free -m
 run:
   command: node index.js
