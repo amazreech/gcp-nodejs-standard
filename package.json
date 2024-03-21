@@ -1,16 +1,19 @@
 {
-  "name": "apprunner_example",
+  "name": "helloworld",
+  "description": "Simple hello world sample in Node",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start":"node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Google LLC",
+  "license": "Apache-2.0",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC"
+  }
 }
